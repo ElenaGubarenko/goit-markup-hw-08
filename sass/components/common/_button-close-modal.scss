@@ -1,0 +1,21 @@
+.button-close {
+  @include transition($property: fill);
+  position: absolute;
+
+  cursor: pointer;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: inherit;
+  background-origin: border-box;
+
+  &:hover,
+  &:focus {
+    fill: $blue-color;
+    transform: fill;
+  }
+}
