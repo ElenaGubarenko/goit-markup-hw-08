@@ -130,7 +130,18 @@
         <h2 class="team__title">Наша команда</h2>
         <ul class="workers">
           <li class="workers__item">
-            <img src="./images-optimized/index21.jpg" alt="фото Игоря Демьяненко" width="270" height="260" />
+
+
+            <picture>
+              <source
+                srcset="./images-optimized/desktop/imgteam1.webp 1x, ./images-optimized/desktop/imgteam1@2x.webp 2x"
+                media="(min-width: 1170px)" type="image/webp">
+              <source srcset="./images-optimized/desktop/imgteam1.jpg 1x, ./images-optimized/desktop/imgteam1@2x.jpg 2x"
+                media="(min-width: 1170px)">
+              <img src="./images-optimized/mobile/imgteam1.jpg" alt="фото Игоря Демьяненко" width="270" height="260">
+            </picture>
+
+
             <h4 class="workers__member">Игорь Демьяненко</h4>
             <p class="workers__profession">Product Designer</p>
             <ul class="team-social-link">

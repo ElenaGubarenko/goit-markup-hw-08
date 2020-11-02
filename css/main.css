@@ -79,13 +79,19 @@ ul {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images-optimized/mobile/hero.jpg);
+  padding: 118px 0;
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images-optimized/mobile/hero.jpg);
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images-optimized/mobile/hero@2x.jpg);
+  }
 }
 
 .hero__title {
-  padding-top: 118px;
   margin-bottom: 30px;
   margin-top: 0;
   width: 100%;
@@ -99,8 +105,9 @@ ul {
 }
 
 .hero__button {
+  display: block;
   padding: 10px 31px;
-  margin-bottom: 118px;
+  margin: auto;
   font-family: "Roboto", sans-serif;
   color: #ffffff;
   background-color: #2196f3;
@@ -113,6 +120,30 @@ ul {
   border-radius: 4px;
   border-color: #2196f3;
   min-width: 120px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images-optimized/tablet/hero.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images-optimized/tablet/hero@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images-optimized/desktop/hero.jpg);
+  }
+}
+
+@media screen and (min-width: 1170px) and (min-device-pixel-ratio: 2), screen and (min-width: 1170px) and (min-resolution: 192dpi), screen and (min-width: 1170px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images-optimized/desktop/hero@2x.jpg);
+  }
 }
 
 .backdrope {
@@ -188,7 +219,7 @@ ul {
   text-transform: uppercase;
 }
 
-.advantage__item {
+.advantage__item:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -215,5 +246,14 @@ ul {
 
 .icon-astronaut::before {
   background-image: url(../images-optimized/astronaut1.svg);
+}
+
+.our-work {
+  display: none;
+}
+
+.team {
+  padding: 60px 0;
+  background-color: #f5f4fa;
 }
 /*# sourceMappingURL=main.css.map */

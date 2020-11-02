@@ -30,12 +30,9 @@
     text-transform: uppercase;
   }
 
-  &__item {
+  &__item:not(:last-child) {
     margin-bottom: 30px;
   }
-  // &__item::not(:last-child) {
-  //   margin-bottom: 30px;
-  // }
 
   &__text {
     margin: 0;
