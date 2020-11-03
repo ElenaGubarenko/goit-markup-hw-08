@@ -389,6 +389,11 @@ img {
   flex-wrap: wrap;
   width: 100%;
   max-width: 480px;
+  padding: 0;
+}
+
+.clients__item {
+  width: calc((100%-30px) / 2);
 }
 
 .footer-subscribe__title {

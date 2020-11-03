@@ -40,11 +40,12 @@
     flex-wrap: wrap;
     width: 100%;
     max-width: 480px;
+    padding: 0;
   }
 
-  // &__item {
-
-  // }
+  &__item {
+    width: calc((100%-30px) / 2);
+  }
 }
 
 // &__list {
