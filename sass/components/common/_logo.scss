@@ -11,8 +11,11 @@
     color: $blue-color;
   }
 
-  // @media screen and (min-width: 480px) {
-  // }
+  &_black-background {
+    display: block;
+    margin-bottom: 20px;
+    color: $white-color;
+  }
 }
 
 // .logolink {
@@ -26,10 +29,3 @@
 //     padding: 25px 0;
 //     margin-right: 94px;
 //   }
-
-//   &_black-background {
-//     display: block;
-//     margin-bottom: 20px;
-//     color: $white-color;
-//   }
-// }
