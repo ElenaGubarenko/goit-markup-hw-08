@@ -10,6 +10,12 @@
     font-size: 14px;
     line-height: 1.1;
   }
+
+  @media screen and (min-width: 768px) {
+    & {
+      margin-top: 60px;
+    }
+  }
 }
 
 .subscribe-form {
@@ -20,7 +26,14 @@
 
   &__email {
     width: 100%;
-    max-width: 480px;
+    @media screen and (max-width: 467px) {
+      max-width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 450px;
+    }
+
     margin-bottom: 20px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -32,6 +45,16 @@
 
   &__label {
     width: 100%;
+
+    @media screen and (min-width: 768px) {
+      &__label {
+        width: 450px;
+      }
+
+      // &__email {
+      //   width: 450px;
+      // }
+    }
   }
 
   &__label::placeholder {

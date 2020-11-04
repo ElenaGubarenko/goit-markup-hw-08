@@ -21,17 +21,12 @@
     margin-top: 0;
     margin-bottom: 10px;
 
-    text-align: center;
     color: $heading-text-color;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-  }
-
-  &__item:not(:last-child) {
-    margin-bottom: 30px;
   }
 
   &__text {
@@ -43,6 +38,36 @@
     line-height: 1.7;
     letter-spacing: 0.03em;
   }
+
+  @media screen and (max-width: 767px) {
+    &__title {
+      text-align: center;
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 768px;
+    }
+
+    &__item {
+      width: 354px;
+    }
+
+    &__item:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+
+    &__item:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 // .advantage {
@@ -53,9 +78,7 @@
 //     margin-right: 72px;
 //   }
 
-//   &__list {
-//     display: flex;
-//   }
+//
 
 .icon-antenna::before {
   background-image: url(../images-optimized/antenna1.svg);
