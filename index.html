@@ -19,43 +19,46 @@
             class="logolink__logo-web">Web</span>Studio</a>
 
 
-        <button class="menu-button" type="button" aria-label="Переключатель меню" data-header__mobile-button>
+        <button class="menu-button" type="button" aria-label="Переключатель меню" data-menu-button>
           <svg class="header__mobile-icon" width="40" height="40">
             <use class="header__icon-close" href="./sprite.svg#icon-close-mobile"></use>
-            <use class="header__icon-open" ref="./sprite.svg#icon-menu-mobile"></use>
+            <use class="header__icon-open" href="./sprite.svg#icon-menu-mobile"></use>
 
           </svg>
         </button>
-        <ul class="header-nav__list">
-          <li class="header-nav__item">
-            <a href="./index.html" class="header-nav__link current">Студия</a>
-          </li>
-          <li class="header-nav__item">
-            <a href="./portfolio.html" class="header-nav__link">Портфолио</a>
-          </li>
-          <li class="header-nav__item">
-            <a href="./test.html" class="header-nav__link">Контакты</a>
-          </li>
-        </ul>
 
-        <ul class="header__contact">
-          <li class="header-contact__item">
-            <a href="mailto:info@example.com" class="header-contact__link">
-              <svg class="header-contact__icon icon-envelope" width="16" height="12">
-                <use href="./sprite.svg#icon-envelope"></use>
-              </svg>
-              info@example.com
-            </a>
-          </li>
-          <li class="header-contact__item">
-            <a href="tel:+380991111111" class="header-contact__link">
-              <svg class="header-contact__icon icon-vector" width="10" height="16">
-                <use href="./sprite.svg#icon-vector"></use>
-              </svg>
-              +38 099 111 11 11
-            </a>
-          </li>
-        </ul>
+        <div class="header__menu">
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a href="./index.html" class="header-nav__link current">Студия</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="./portfolio.html" class="header-nav__link">Портфолио</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="./test.html" class="header-nav__link">Контакты</a>
+            </li>
+          </ul>
+
+          <ul class="header__contact">
+            <li class="header-contact__item">
+              <a href="mailto:info@example.com" class="header-contact__link">
+                <svg class="header-contact__icon icon-envelope" width="16" height="12">
+                  <use href="./sprite.svg#icon-envelope"></use>
+                </svg>
+                info@example.com
+              </a>
+            </li>
+            <li class="header-contact__item">
+              <a href="tel:+380991111111" class="header-contact__link">
+                <svg class="header-contact__icon icon-vector" width="10" height="16">
+                  <use href="./sprite.svg#icon-vector"></use>
+                </svg>
+                +38 099 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
   </header>

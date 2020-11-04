@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   padding: 16px 0;
 
   &__nav {
@@ -6,10 +7,10 @@
     align-items: center;
   }
 
-  &-nav__list,
-  &__contact {
-    display: none;
-  }
+  // &-nav__list,
+  // &__contact {
+  //   display: none;
+  // }
 
   &__mobile-icon {
     display: block;
@@ -36,13 +37,89 @@
     display: none;
   }
 
-  .header-button.is-open &__icon-close {
+  .menu-button.is-open &__icon-close {
     display: block;
   }
 
   .menu-button.is-open &__icon-open {
     display: none;
   }
+
+  &__menu {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 480px;
+    background-color: salmon;
+  }
+
+  &-nav__link {
+    color: $heading-text-color;
+    @include transition($property: color);
+  }
+
+  &-nav__link:hover,
+  &-nav__link:focus {
+    transform: color;
+
+    color: $blue-color;
+  }
+
+  &-contact__link {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: $main-text-color;
+
+    @include transition($property: color);
+  }
+
+  &-contact__link:hover,
+  &-contact__link:focus {
+    transform: color;
+    color: $blue-color;
+  }
+
+  &-contact__icon {
+    fill: $main-text-color;
+  }
+
+  &-contact__item:hover &,
+  &-contact__item:focus & {
+    transform: fill;
+    fill: $blue-color;
+  }
+
+  &-contact__item {
+    @include transition($property: fill);
+  }
+}
+
+.current {
+  position: relative;
+
+  color: $blue-color;
+
+  &::after {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    content: "";
+    height: 4px;
+    width: 100%;
+    background-color: $blue-color;
+    border-radius: 2px;
+  }
+}
+
+.icon-envelope,
+.icon-vector {
+  margin-right: 10px;
 }
 
 // .header {
@@ -56,7 +133,7 @@
 //   }
 
 //   &-nav__link {
-//     color: $heading-text-color;
+//
 //     padding: 32px 0;
 //   }
 
@@ -64,18 +141,9 @@
 //     margin-right: 52px;
 //   }
 
-//   &-nav__link {
-//     transition-property: color;
-//     transition-duration: 250ms;
-//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-//   }
+//
 
-//   &-nav__link:hover,
-//   &-nav__link:focus {
-//     transform: color;
-
-//     color: $blue-color;
-//   }
+//
 
 //   &__nav {
 //     display: flex;
@@ -98,11 +166,7 @@
 //     margin-right: 51px;
 //   }
 
-//   &-contact__item {
-//     transition-property: fill;
-//     transition-duration: 250ms;
-//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-//   }
+//
 
 //   &-contact__link {
 //     display: flex;
@@ -115,46 +179,5 @@
 //     letter-spacing: 0.02em;
 //     color: $main-text-color;
 
-//     transition-property: color;
-//     transition-duration: 250ms;
-//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//     @include transition($property: color);
 //   }
-
-//   &-contact__link:hover,
-//   &-contact__link:focus {
-//     transform: color;
-//     color: $blue-color;
-//   }
-// }
-
-// .current {
-//   position: relative;
-
-//   color: $blue-color;
-
-//   &::after {
-//     display: block;
-//     position: absolute;
-//     bottom: 0;
-//     content: "";
-//     height: 4px;
-//     width: 100%;
-//     background-color: $blue-color;
-//     border-radius: 2px;
-//   }
-// }
-
-// .header-contact__icon {
-//   fill: $main-text-color;
-
-//   .header-contact__item:hover &,
-//   .header-contact__item:focus & {
-//     transform: fill;
-//     fill: $blue-color;
-//   }
-// }
-
-// .icon-envelope,
-// .icon-vector {
-//   margin-right: 10px;
-// }
