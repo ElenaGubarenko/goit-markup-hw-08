@@ -133,11 +133,11 @@
     height: 40px;
     border: none;
     background-color: inherit;
-  }
 
-  &:hover,
-  &:focus {
-    fill: $blue-color;
+    &:hover,
+    &:focus {
+      fill: $blue-color;
+    }
   }
 }
 

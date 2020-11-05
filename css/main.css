@@ -212,8 +212,7 @@ img {
     border: none;
     background-color: inherit;
   }
-  :hover,
-  :focus {
+  .menu-button:hover, .menu-button:focus {
     fill: #2196f3;
   }
 }
