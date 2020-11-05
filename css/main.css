@@ -1166,6 +1166,12 @@ img {
 
 @media screen and (min-width: 1200px) {
   .subscribe-form__email {
+    width: 358px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-form__email {
     margin-bottom: 0;
     margin-right: 12px;
   }
@@ -1178,6 +1184,12 @@ img {
 @media screen and (min-width: 768px) {
   .subscribe-form__label__label {
     width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-form__label__label {
+    width: 358px;
   }
 }
 
@@ -1257,6 +1269,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-links {
     display: block;
+    margin-bottom: 8px;
   }
   .footer-links__text {
     text-align: left;
@@ -1325,15 +1338,12 @@ img {
     padding: 60px 0;
   }
   .footer-contacts {
-    display: block;
+    display: inline;
     text-align: left;
     margin-right: 70px;
-    width: 100%;
   }
   .footer-container {
     flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
   }
 }
 
