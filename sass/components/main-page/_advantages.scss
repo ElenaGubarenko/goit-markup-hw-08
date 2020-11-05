@@ -68,17 +68,27 @@
       margin-bottom: 30px;
     }
   }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+
+    &__list {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__item {
+      width: 270px;
+    }
+
+    &__item:not(:last-child) {
+      margin-right: 72px;
+    }
+  }
 }
-
-// .advantage {
-//   padding-bottom: 94px;
-//   padding-top: 94px;
-
-//   &__item:not(:last-child) {
-//     margin-right: 72px;
-//   }
-
-//
 
 .icon-antenna::before {
   background-image: url(../images-optimized/antenna1.svg);
