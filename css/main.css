@@ -939,12 +939,16 @@ img {
   }
   .workers__item {
     width: 270px;
+    padding-bottom: 30px;
   }
   .workers__item:not(:last-child) {
     margin-right: 30px;
   }
   .workers__item:nth-child(-n + 2) {
     margin-bottom: 0;
+  }
+  .workers__profession {
+    margin-bottom: 16px;
   }
 }
 

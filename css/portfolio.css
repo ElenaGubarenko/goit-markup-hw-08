@@ -491,6 +491,9 @@ img {
   .grid__item:nth-child(3n + 3) {
     margin-right: 0;
   }
+  .grid__item {
+    margin-right: 30px;
+  }
 }
 
 .overlay-text {
