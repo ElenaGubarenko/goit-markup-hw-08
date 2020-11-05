@@ -4,6 +4,13 @@
   &__list {
     margin: 0;
     padding: 0;
+
+    @media screen and (min-width: 768px) {
+      & {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
   }
 
   &__title {
@@ -32,6 +39,12 @@
     padding: 0 0 20px;
     &:not(:last-child) {
       margin-bottom: 30px;
+
+      @media screen and (min-width: 768px) {
+        &:nth-child(2n + 1) {
+          margin-right: 30px;
+        }
+      }
     }
 
     outline: 1px solid $border-card;
