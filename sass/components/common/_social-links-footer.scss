@@ -21,10 +21,8 @@
     height: 44px;
 
     @include transition($property: background-color);
-    // transition-property: background-color;
-    // transition-duration: 250ms;
-    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+
   &__item:not(:last-child) {
     margin-right: 10px;
   }
@@ -41,8 +39,14 @@
     margin: 0;
     padding: 0;
   }
-}
 
-// .footer-links {
-//   margin-left: 70px;
-//   margin-top: 12px;
+  @media screen and (min-width: 1200px) {
+    display: block;
+
+    &__text {
+      text-align: left;
+      // margin-left: 70px;
+      // margin-top: 12px;
+    }
+  }
+}

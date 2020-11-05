@@ -55,6 +55,23 @@
       margin-bottom: 0;
     }
   }
+
+  @media screen and (min-width: 1200px) {
+    padding: 60px 0;
+
+    &-contacts {
+      display: block;
+      text-align: left;
+      margin-right: 70px;
+      width: 100%;
+    }
+
+    &-container {
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }
 
 .mail {
@@ -71,21 +88,3 @@
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
-
-// .footer {
-//
-//
-//   text-align: left;
-
-//
-//   }
-
-//
-
-//   &-links__text {
-//     margin: 0 0 20px;
-//     padding: 0;
-//}
-
-//
-// }

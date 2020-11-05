@@ -11,6 +11,19 @@
     line-height: 1.17;
     color: $heading-text-color;
   }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+
+    &__title {
+      margin-bottom: 59px;
+      margin-top: 0;
+      font-size: 36px;
+      line-height: 1.17;
+      color: $heading-text-color;
+    }
+  }
 }
 
 .workers {
@@ -35,7 +48,7 @@
     margin-top: 30px;
     margin-bottom: 10px;
 
-    color: $black-color;
+    color: $heading-text-color;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
@@ -73,32 +86,20 @@
       margin-bottom: 30px;
     }
   }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+
+    &__item {
+      width: 270px;
+    }
+
+    &__item:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    &__item:nth-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
 }
-
-// .team {
-//
-//   padding-bottom: 94px;
-//   padding-top: 94px;
-
-//   &__title {
-//     margin-bottom: 59px;
-//     margin-top: 0;
-//   }
-// }
-
-// .workers {
-//   display: flex;
-//   }
-
-//   &__item:not(:last-child) {
-//     margin-right: 30px;
-//   }
-
-//   &__member {
-//     padding-top: 33px;
-//     padding-bottom: 17px;
-//     margin: 0;
-
-//   }
-
-// }
