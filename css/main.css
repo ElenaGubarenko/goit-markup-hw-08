@@ -451,6 +451,7 @@ img {
   top: 0;
   left: 0;
   overflow-y: scroll;
+  padding: 93px 15px;
   opacity: 1;
   transition-property: opacity;
   transition-duration: 250ms;
@@ -548,7 +549,7 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   position: absolute;
   left: 12px;
-  top: 11px;
+  top: 12px;
 }
 
 .modal-label__input:hover ~ .modal-label__icon,
