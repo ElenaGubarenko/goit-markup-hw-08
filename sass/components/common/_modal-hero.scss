@@ -1,6 +1,6 @@
 .modal {
   position: absolute;
-  top: 70%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
 
@@ -13,6 +13,10 @@
   border-radius: 4px;
 
   @include transition($property: transform);
+
+  @media screen and (min-width: 768px) {
+    top: 50%;
+  }
 
   @media screen and (min-width: 1200px) {
     top: 50%;

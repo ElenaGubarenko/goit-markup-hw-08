@@ -464,7 +464,7 @@ img {
 
 .modal {
   position: absolute;
-  top: 70%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 100%;
@@ -476,6 +476,12 @@ img {
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    top: 50%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
