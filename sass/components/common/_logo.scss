@@ -20,6 +20,12 @@
     color: $white-color;
   }
 
+  @media screen and (min-width: 768px) {
+    &_wite-background {
+      margin-right: 88px;
+    }
+  }
+
   @media screen and (min-width: 1200px) {
     font-size: 26px;
     line-height: 1.2;
@@ -29,12 +35,3 @@
     }
   }
 }
-
-// .logolink {
-//
-//   text-decoration: none;
-
-//   &_wite-background {
-//     padding: 25px 0;
-//     margin-right: 94px;
-//   }

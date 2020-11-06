@@ -17,6 +17,10 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: $white-color;
   font-style: normal;
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 a {

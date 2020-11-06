@@ -4,6 +4,10 @@ body {
   font-style: normal;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
 }
@@ -89,6 +93,12 @@ img {
 .logolink_black-background {
   margin-bottom: 20px;
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .logolink_wite-background {
+    margin-right: 88px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -247,6 +257,7 @@ img {
     align-items: center;
     margin: 0;
     padding: 0;
+    width: 100%;
   }
   .header__contact {
     padding: 0;
@@ -439,6 +450,7 @@ img {
   height: 100%;
   top: 0;
   left: 0;
+  overflow-y: scroll;
   opacity: 1;
   transition-property: opacity;
   transition-duration: 250ms;
