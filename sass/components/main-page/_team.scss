@@ -28,7 +28,13 @@
 
 .workers {
   padding: 0;
-  margin: auto;
+  margin-bottom: -30px;
+  margin-right: -30px;
+
+  &__item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
 
   &__item {
     padding-bottom: 24px;
@@ -39,9 +45,14 @@
   }
 
   @media screen and (max-width: 767px) {
-    &__item:not(:last-child) {
-      margin-bottom: 30px;
-    }
+    // &__item:not(:last-child) {
+    //   margin-bottom: 30px;
+    // }
+    // margin: 0 -30px -30px -30px;
+
+    // &__item {
+    //   margin: 30px;
+    // }
   }
 
   &__member {
@@ -78,13 +89,13 @@
       width: 354px;
     }
 
-    &__item:nth-child(2n + 1) {
-      margin-right: 30px;
-    }
+    // &__item:nth-child(2n + 1) {
+    //   margin-right: 30px;
+    // }
 
-    &__item:nth-child(-n + 2) {
-      margin-bottom: 30px;
-    }
+    // &__item:nth-child(-n + 2) {
+    //   margin-bottom: 30px;
+    // }
   }
 
   @media screen and (min-width: 1200px) {
@@ -95,13 +106,13 @@
       padding-bottom: 30px;
     }
 
-    &__item:not(:last-child) {
-      margin-right: 30px;
-    }
+    // &__item:not(:last-child) {
+    //   margin-right: 30px;
+    // }
 
-    &__item:nth-child(-n + 2) {
-      margin-bottom: 0;
-    }
+    // &__item:nth-child(-n + 2) {
+    //   margin-bottom: 0;
+    // }
 
     &__profession {
       margin-bottom: 16px;
