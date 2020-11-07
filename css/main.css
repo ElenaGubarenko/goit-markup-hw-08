@@ -363,13 +363,13 @@ img {
 .hero__title {
   margin-bottom: 30px;
   margin-top: 0;
-  line-height: 1.36;
   color: #ffffff;
   letter-spacing: 0.06em;
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
   font-size: 26px;
+  line-height: 1.36;
 }
 
 .hero__button {
@@ -398,17 +398,14 @@ img {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images-optimized/mobile/hero.jpg);
   }
+  .hero__title {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) and (min-device-pixel-ratio: 2), screen and (max-width: 768px) and (min-resolution: 192dpi), screen and (max-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images-optimized/mobile/hero@2x.jpg);
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .hero__title {
-    width: 100%;
   }
 }
 
@@ -424,22 +421,22 @@ img {
   }
 }
 
-@media screen and (min-width: 1170px) {
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images-optimized/desktop/hero.jpg);
-  }
-}
-
-@media screen and (min-width: 1170px) and (min-device-pixel-ratio: 2), screen and (min-width: 1170px) and (min-resolution: 192dpi), screen and (min-width: 1170px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images-optimized/Img.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images-optimized/desktop/hero@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images-optimized/desktop/hero.jpg);
   }
   .hero__title {
     font-size: 44px;
     line-height: 1.4;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images-optimized/Img.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images-optimized/desktop/hero@2x.jpg);
   }
 }
 
@@ -948,9 +945,6 @@ img {
     display: flex;
     flex-wrap: wrap;
   }
-  .workers__item {
-    width: 354px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -958,7 +952,6 @@ img {
     display: flex;
   }
   .workers__item {
-    width: 270px;
     padding-bottom: 30px;
   }
   .workers__profession {

@@ -354,10 +354,6 @@ img {
   }
 }
 
-* {
-  outline: solid salmon 3px;
-}
-
 .categories {
   padding: 60px 0 40px;
   margin: 0;
@@ -484,6 +480,9 @@ img {
 @media screen and (min-width: 1200px) {
   .grid {
     padding-bottom: 94px;
+  }
+  .grid__item {
+    flex-basis: calc(100% / 3-30px);
   }
   .grid__list {
     display: flex;

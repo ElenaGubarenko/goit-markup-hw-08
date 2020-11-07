@@ -1,6 +1,6 @@
-* {
-  outline: solid salmon 3px;
-}
+// * {
+//   outline: solid salmon 3px;
+// }
 .categories {
   padding: 60px 0 40px;
   margin: 0;
@@ -17,10 +17,6 @@
     width: 100%;
     max-width: 768px;
   }
-
-  // &__item:not(:last-child) {
-  //   margin-right: 8px;
-  // }
 
   &__item {
     margin-bottom: 30px;
