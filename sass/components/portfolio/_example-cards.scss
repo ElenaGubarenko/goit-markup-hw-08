@@ -1,5 +1,5 @@
 .grid {
-  padding: 15px 0 60px;
+  padding: 0 0 60px;
 
   &__list {
     margin-right: -30px;
@@ -41,10 +41,6 @@
     margin-bottom: 30px;
     margin-right: 30px;
 
-    // &:not(:last-child) {
-    //   margin-bottom: 30px;
-    // }
-
     outline: 1px solid $border-card;
     @include transition($property: box-sizing box-shadow);
 
@@ -58,12 +54,6 @@
     }
   }
 
-  // @media screen and (min-width: 768px) {
-  //   &__item:nth-child(2n + 1) {
-  //     margin-right: 30px;
-  //   }
-  // }
-
   @media screen and (min-width: 1200px) {
     & {
       padding-bottom: 94px;
@@ -73,29 +63,5 @@
       display: flex;
       flex-wrap: wrap;
     }
-
-    // &__item:nth-child(2n + 1) {
-    //   margin-right: 0;
-    // }
-
-    // &__item:nth-child(3n + 3) {
-    //   margin-right: 0;
-    // }
-
-    // &__item {
-    //   margin-right: 30px;
-    // }
-
-    // &__item {
-    //   margin-right: 30px;
-    // }
-
-    // &:nth-child(2n + 1) {
-    //   margin-right: 0;
-    // }
-
-    // &__item:nth-child(3n + 3) {
-    //   margin-right: 0;
-    // }
   }
 }
